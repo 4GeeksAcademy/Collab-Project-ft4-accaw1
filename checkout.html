@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Review the three-step Forma checkout demonstration. No payment is collected or processed." />
+    <meta name="theme-color" content="#f7f6f2" />
+    <title>Checkout  -  Forma</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-[#f7f6f2] text-[#20211f] antialiased">
+    <div class="bg-[#c94326] px-4 py-2 text-center text-xs font-semibold tracking-[0.12em] text-white">COMPLIMENTARY SHIPPING ON ORDERS OVER $150</div>
+    <header class="border-b border-[#deddd7]">
+      <div class="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
+        <div class="flex min-h-20 flex-wrap items-center justify-between gap-x-8 gap-y-3 py-4">
+          <a href="index.html" class="order-1 text-2xl font-black tracking-[-0.06em]" aria-label="Forma home">forma<span class="text-[#c94326]">.</span></a>
+          <form action="catalog.html" method="get" role="search" class="order-3 flex w-full items-center border-b border-[#a9a8a1] sm:order-2 sm:ml-auto sm:w-52 lg:ml-16 lg:w-64"><label for="site-search" class="sr-only">Search products</label><input id="site-search" name="q" type="search" placeholder="Search pieces" class="min-w-0 flex-1 bg-transparent py-2 text-sm outline-none placeholder:text-[#77766f]" /><button type="submit" class="px-1 py-2 text-xs font-semibold uppercase tracking-wider">Search</button></form>
+          <nav aria-label="Main navigation" class="order-2 flex items-center gap-4 text-sm font-medium sm:order-3 sm:gap-6"><a href="catalog.html" class="hover:text-[#c94326]">Shop</a><details class="relative"><summary class="cursor-pointer list-none hover:text-[#c94326]">Account</summary><div class="absolute right-0 z-20 mt-3 w-44 border border-[#deddd7] bg-[#f7f6f2] p-4 shadow-lg"><a href="mailto:hello@forma.example" class="block py-2 text-sm hover:text-[#c94326]">Sign in help</a><a href="cart.html" class="block py-2 text-sm hover:text-[#c94326]">Your bag</a></div></details><a href="cart.html" class="whitespace-nowrap hover:text-[#c94326]">Bag <span aria-label="3 items">(3)</span></a></nav>
+        </div>
+        <nav aria-label="Shop categories" class="flex gap-6 overflow-x-auto py-3 text-xs font-semibold uppercase tracking-[0.13em] text-[#62615b]"><a href="catalog.html#new-arrivals" class="whitespace-nowrap hover:text-[#c94326]">New in</a><a href="catalog.html#footwear" class="whitespace-nowrap hover:text-[#c94326]">Footwear</a><a href="catalog.html#shirts" class="whitespace-nowrap hover:text-[#c94326]">Shirts</a><a href="catalog.html#pants" class="whitespace-nowrap hover:text-[#c94326]">Pants</a><a href="catalog.html#accessories" class="whitespace-nowrap hover:text-[#c94326]">Accessories</a></nav>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
+      <section aria-labelledby="checkout-title" class="pb-16 pt-10 sm:pb-24 sm:pt-14">
+        <nav aria-label="Breadcrumb" class="mb-8 text-xs text-[#77766f]"><a href="cart.html" class="hover:text-[#c94326]">Your bag</a><span aria-hidden="true" class="px-2">/</span><span aria-current="page">Checkout</span></nav>
+        <div class="mb-9 flex flex-wrap items-end justify-between gap-5">
+          <div><p class="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#77766f]">Almost there</p><h1 id="checkout-title" class="text-4xl font-medium tracking-[-0.05em] sm:text-5xl">Checkout</h1></div>
+          <ol aria-label="Checkout sections" class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.12em] text-[#77766f] sm:gap-4 sm:text-xs"><li class="text-[#c94326]">01 <span class="hidden sm:inline">Details</span></li><li aria-hidden="true">/</li><li>02 <span class="hidden sm:inline">Delivery</span></li><li aria-hidden="true">/</li><li>03 <span class="hidden sm:inline">Payment</span></li></ol>
+        </div>
+
+        <div class="grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_360px] lg:gap-16">
+          <form autocomplete="off" aria-label="Checkout details" class="space-y-8">
+            <fieldset class="border-t border-[#deddd7] pt-6">
+              <legend class="px-0 text-xl font-medium tracking-[-0.03em]"><span class="mr-3 text-sm font-semibold text-[#c94326]">01</span>Personal details</legend>
+              <div class="mt-5 grid gap-5 sm:grid-cols-2">
+                <div><label for="full-name" class="mb-2 block text-xs font-semibold">Full name</label><input id="full-name" name="name" type="text" autocomplete="name" placeholder="Your name" class="h-12 w-full border border-[#deddd7] bg-transparent px-3 text-sm placeholder:text-[#999890]" /></div>
+                <div><label for="email" class="mb-2 block text-xs font-semibold">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" class="h-12 w-full border border-[#deddd7] bg-transparent px-3 text-sm placeholder:text-[#999890]" /></div>
+                <div class="sm:col-span-2"><label for="phone" class="mb-2 block text-xs font-semibold">Phone number <span class="font-normal text-[#77766f]">(optional)</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="For delivery updates" class="h-12 w-full border border-[#deddd7] bg-transparent px-3 text-sm placeholder:text-[#999890] sm:max-w-md" /></div>
+              </div>
+            </fieldset>
+
+            <fieldset class="border-t border-[#deddd7] pt-6">
+              <legend class="px-0 text-xl font-medium tracking-[-0.03em]"><span class="mr-3 text-sm font-semibold text-[#c94326]">02</span>Shipping address</legend>
+              <div class="mt-5 grid gap-5 sm:grid-cols-2">
+                <div class="sm:col-span-2"><label for="street" class="mb-2 block text-xs font-semibold">Street address</label><input id="street" name="street" type="text" autocomplete="street-address" placeholder="Street and number" class="h-12 w-full border border-[#deddd7] bg-transparent px-3 text-sm placeholder:text-[#999890]" /></div>
+                <div><label for="city" class="mb-2 block text-xs font-semibold">City</label><input id="city" name="city" type="text" autocomplete="address-level2" placeholder="City" class="h-12 w-full border border-[#deddd7] bg-transparent px-3 text-sm placeholder:text-[#999890]" /></div>
+                <div><label for="region" class="mb-2 block text-xs font-semibold">State / region</label><input id="region" name="region" type="text" autocomplete="address-level1" placeholder="State or region" class="h-12 w-full border border-[#deddd7] bg-transparent px-3 text-sm placeholder:text-[#999890]" /></div>
+                <div><label for="postal-code" class="mb-2 block text-xs font-semibold">Postal code</label><input id="postal-code" name="postal-code" type="text" autocomplete="postal-code" placeholder="ZIP / postal code" class="h-12 w-full border border-[#deddd7] bg-transparent px-3 text-sm placeholder:text-[#999890]" /></div>
+                <div><label for="country" class="mb-2 block text-xs font-semibold">Country</label><select id="country" name="country" autocomplete="country-name" class="h-12 w-full border border-[#deddd7] bg-[#f7f6f2] px-3 text-sm"><option value="">Select country</option><option>United States</option><option>Canada</option><option>United Kingdom</option><option>Other</option></select></div>
+              </div>
+            </fieldset>
+
+            <fieldset class="border-t border-[#deddd7] pt-6">
+              <legend class="px-0 text-xl font-medium tracking-[-0.03em]"><span class="mr-3 text-sm font-semibold text-[#c94326]">03</span>Card payment</legend>
+              <div role="note" class="mt-5 border-l-2 border-[#c94326] bg-[#efeee8] p-4 text-sm leading-6 text-[#55554f]">This is a static design demo. Do not enter real personal or card details. Nothing is submitted, stored, or charged.</div>
+              <div class="mt-5 grid gap-5 sm:grid-cols-2">
+                <div class="sm:col-span-2"><label for="card-name" class="mb-2 block text-xs font-semibold">Name on card</label><input id="card-name" name="card-name" type="text" autocomplete="off" placeholder="Name as it appears on card" class="h-12 w-full border border-[#deddd7] bg-transparent px-3 text-sm placeholder:text-[#999890]" /></div>
+                <div class="sm:col-span-2"><label for="card-number" class="mb-2 block text-xs font-semibold">Card number</label><input id="card-number" name="card-number" type="text" inputmode="numeric" autocomplete="off" maxlength="19" placeholder="0000 0000 0000 0000" class="h-12 w-full border border-[#deddd7] bg-transparent px-3 text-sm placeholder:text-[#999890]" /></div>
+                <div><label for="expiry" class="mb-2 block text-xs font-semibold">Expiration date</label><input id="expiry" name="expiry" type="text" inputmode="numeric" autocomplete="off" placeholder="MM / YY" class="h-12 w-full border border-[#deddd7] bg-transparent px-3 text-sm placeholder:text-[#999890]" /></div>
+                <div><label for="security-code" class="mb-2 block text-xs font-semibold">Security code</label><input id="security-code" name="security-code" type="password" inputmode="numeric" autocomplete="off" maxlength="4" placeholder="CVV" class="h-12 w-full border border-[#deddd7] bg-transparent px-3 text-sm placeholder:text-[#999890]" /></div>
+              </div>
+              <button type="button" disabled class="mt-7 flex min-h-12 w-full cursor-not-allowed items-center justify-center bg-[#aaa9a2] px-5 text-sm font-semibold text-white sm:w-auto sm:min-w-64">Place order  |  unavailable in demo</button>
+            </fieldset>
+          </form>
+
+          <aside aria-labelledby="summary-title" class="border border-[#deddd7] bg-[#efeee8] p-5 sm:p-7 lg:sticky lg:top-8">
+            <h2 id="summary-title" class="text-xl font-medium tracking-[-0.03em]">Order summary</h2>
+            <ul class="mt-5 divide-y divide-[#d3d1c9] border-y border-[#d3d1c9]">
+              <li class="flex justify-between gap-4 py-3 text-sm"><span>The Field Overshirt <span class="text-[#77766f]">x 1</span></span><span class="shrink-0">$128.00</span></li>
+              <li class="flex justify-between gap-4 py-3 text-sm"><span>Daily Cotton Tee <span class="text-[#77766f]">x 2</span></span><span class="shrink-0">$116.00</span></li>
+              <li class="flex justify-between gap-4 py-3 text-sm"><span>Canvas Low Top <span class="text-[#77766f]">x 1</span></span><span class="shrink-0">$88.00</span></li>
+            </ul>
+            <dl class="mt-5 space-y-4 text-sm"><div class="flex justify-between gap-4"><dt>Subtotal</dt><dd>$332.00</dd></div><div class="flex justify-between gap-4"><dt>Estimated tax</dt><dd>$27.39</dd></div><div class="flex justify-between gap-4 border-t border-[#d3d1c9] pt-4 text-base font-semibold"><dt>Total</dt><dd>$359.39</dd></div></dl>
+            <a href="cart.html" class="mt-6 inline-block text-sm underline decoration-[#a9a8a1] underline-offset-4 hover:text-[#c94326]">Back to your bag</a>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#20211f] text-[#f7f6f2]"><div class="mx-auto max-w-[1440px] px-5 py-12 sm:px-8 sm:py-16 lg:px-12"><div class="grid gap-10 border-b border-white/20 pb-12 sm:grid-cols-2 lg:grid-cols-4"><div><a href="index.html" class="text-3xl font-black tracking-[-0.06em]">forma<span class="text-[#ed7354]">.</span></a><p class="mt-3 max-w-xs text-sm leading-6 text-white/65">Clothes for the everyday, and everything just outside it.</p></div><div><h2 class="text-xs font-bold uppercase tracking-[0.16em] text-white/55">Categories</h2><ul class="mt-4 space-y-3 text-sm"><li><a href="catalog.html#footwear" class="hover:text-[#ed7354]">Footwear</a></li><li><a href="catalog.html#shirts" class="hover:text-[#ed7354]">Shirts</a></li><li><a href="catalog.html#pants" class="hover:text-[#ed7354]">Pants</a></li><li><a href="catalog.html#accessories" class="hover:text-[#ed7354]">Accessories</a></li></ul></div><div><h2 class="text-xs font-bold uppercase tracking-[0.16em] text-white/55">The details</h2><ul class="mt-4 space-y-3 text-sm"><li><a href="index.html#terms" class="hover:text-[#ed7354]">Terms and conditions</a></li><li><a href="index.html#privacy" class="hover:text-[#ed7354]">Privacy policy</a></li><li><a href="index.html#about" class="hover:text-[#ed7354]">About Forma</a></li></ul></div><div><h2 class="text-xs font-bold uppercase tracking-[0.16em] text-white/55">Contact</h2><p class="mt-4 text-sm leading-6 text-white/75">Questions, notes, or a good book recommendation.</p><a href="mailto:hello@forma.example" class="mt-2 inline-block text-sm underline decoration-white/40 underline-offset-4 hover:text-[#ed7354]">hello@forma.example</a></div></div><div class="flex flex-col justify-between gap-3 pt-5 text-xs text-white/50 sm:flex-row"><p>(c) 2026 Forma Studio. For the long way home.</p><p>Thoughtfully made, meant to be worn.</p></div></div></footer>
+  </body>
+</html>
