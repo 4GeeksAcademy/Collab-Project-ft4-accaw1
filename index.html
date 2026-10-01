@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Clothes for the everyday, and everything just outside it. Discover considered layers and everyday essentials from Forma."
+    />
+    <meta name="theme-color" content="#f7f6f2" />
+    <title>Forma  -  Clothes for the in-between</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Forma",
+        "url": "https://forma.example",
+        "description": "Considered clothing for everyday life and everything just outside it.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "hello@forma.example",
+          "contactType": "customer service"
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-[#f7f6f2] text-[#20211f] antialiased">
+    <div class="bg-[#c94326] px-4 py-2 text-center text-xs font-semibold tracking-[0.12em] text-white">
+      COMPLIMENTARY SHIPPING ON ORDERS OVER $150
+    </div>
+
+    <header class="border-b border-[#deddd7]">
+      <div class="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
+        <div class="flex min-h-20 flex-wrap items-center justify-between gap-x-8 gap-y-3 py-4">
+          <a href="index.html" class="order-1 text-2xl font-black tracking-[-0.06em]" aria-label="Forma home">forma<span class="text-[#c94326]">.</span></a>
+
+          <form action="catalog.html" method="get" role="search" class="order-3 flex w-full items-center border-b border-[#a9a8a1] sm:order-2 sm:ml-auto sm:w-52 lg:ml-16 lg:w-64">
+            <label for="site-search" class="sr-only">Search products</label>
+            <input id="site-search" name="q" type="search" placeholder="Search pieces" class="min-w-0 flex-1 bg-transparent py-2 text-sm outline-none placeholder:text-[#77766f]" />
+            <button type="submit" class="px-1 py-2 text-xs font-semibold uppercase tracking-wider">Search</button>
+          </form>
+
+          <nav aria-label="Main navigation" class="order-2 flex items-center gap-4 text-sm font-medium sm:order-3 sm:gap-6">
+            <a href="catalog.html" class="hover:text-[#c94326]">Shop</a>
+            <details class="relative">
+              <summary class="cursor-pointer list-none hover:text-[#c94326]">Account</summary>
+              <div class="absolute right-0 z-20 mt-3 w-44 border border-[#deddd7] bg-[#f7f6f2] p-4 shadow-lg">
+                <a href="mailto:hello@forma.example" class="block py-2 text-sm hover:text-[#c94326]">Sign in help</a>
+                <a href="cart.html" class="block py-2 text-sm hover:text-[#c94326]">Your bag</a>
+              </div>
+            </details>
+            <a href="cart.html" class="whitespace-nowrap hover:text-[#c94326]">Bag <span aria-label="0 items">(0)</span></a>
+          </nav>
+        </div>
+
+        <nav aria-label="Shop categories" class="flex gap-6 overflow-x-auto py-3 text-xs font-semibold uppercase tracking-[0.13em] text-[#62615b]">
+          <a href="catalog.html#new-arrivals" class="whitespace-nowrap hover:text-[#c94326]">New in</a>
+          <a href="catalog.html#footwear" class="whitespace-nowrap hover:text-[#c94326]">Footwear</a>
+          <a href="catalog.html#shirts" class="whitespace-nowrap hover:text-[#c94326]">Shirts</a>
+          <a href="catalog.html#pants" class="whitespace-nowrap hover:text-[#c94326]">Pants</a>
+          <a href="catalog.html#accessories" class="whitespace-nowrap hover:text-[#c94326]">Accessories</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section aria-labelledby="campaign-title" class="relative min-h-[560px] overflow-hidden bg-[#7d776b] sm:min-h-[620px]">
+        <img
+          src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=2200&q=85"
+          alt="Model in a relaxed neutral outfit standing in warm afternoon light"
+          class="absolute inset-0 h-full w-full object-cover object-[center_38%]"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/25 to-transparent"></div>
+        <div class="relative mx-auto flex min-h-[560px] max-w-[1440px] items-end px-5 pb-14 pt-20 sm:min-h-[620px] sm:px-8 sm:pb-20 lg:px-12">
+          <div class="max-w-xl text-white">
+            <p class="mb-4 text-xs font-semibold uppercase tracking-[0.22em]">The in-between collection  |  01</p>
+            <h1 id="campaign-title" class="max-w-lg text-5xl leading-[0.98] font-medium tracking-[-0.055em] sm:text-7xl">A little more room to move.</h1>
+            <p class="mt-5 max-w-md text-base leading-7 text-white/85">Easy layers, considered fabrics, and pieces that meet you wherever the day goes.</p>
+            <a href="catalog.html" class="mt-8 inline-flex items-center gap-5 border border-white px-5 py-3 text-sm font-semibold transition-colors hover:bg-white hover:text-[#20211f]">
+              Explore the collection <span aria-hidden="true">-></span>
+            </a>
+          </div>
+        </div>
+        <p class="absolute right-5 bottom-5 text-[10px] font-semibold tracking-[0.16em] text-white/75 sm:right-8 lg:right-12">SPRING / SUMMER 2026</p>
+      </section>
+
+      <section id="new-arrivals" aria-labelledby="new-arrivals-title" class="mx-auto max-w-[1440px] px-5 py-16 sm:px-8 sm:py-20 lg:px-12">
+        <div class="mb-7 flex items-end justify-between gap-4">
+          <div>
+            <p class="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#77766f]">Just found its way here</p>
+            <h2 id="new-arrivals-title" class="text-3xl font-medium tracking-[-0.045em] sm:text-4xl">New arrivals</h2>
+          </div>
+          <a href="catalog.html#new-arrivals" class="shrink-0 border-b border-[#20211f] pb-1 text-sm font-semibold hover:border-[#c94326] hover:text-[#c94326]">Shop all <span aria-hidden="true">-></span></a>
+        </div>
+        <div class="-mx-5 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-3 sm:-mx-8 sm:gap-5 sm:px-8 lg:-mx-12 lg:px-12">
+          <a href="product.html" class="group w-[72vw] max-w-[300px] shrink-0 snap-start sm:w-[34vw] lg:w-[calc((100%-3.75rem)/4)]">
+            <div class="relative aspect-[4/5] overflow-hidden bg-[#e3e0d8]"><img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=720&q=80" alt="Olive canvas overshirt on a hanger" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" /><span class="absolute top-3 left-3 bg-[#f7f6f2] px-2 py-1 text-[10px] font-bold uppercase tracking-wider">New</span></div>
+            <div class="flex justify-between gap-3 pt-3"><div><h3 class="font-medium">The Field Overshirt</h3><p class="mt-1 text-sm text-[#77766f]">Olive canvas</p></div><p class="text-sm font-medium">$128</p></div>
+          </a>
+          <a href="product.html" class="group w-[72vw] max-w-[300px] shrink-0 snap-start sm:w-[34vw] lg:w-[calc((100%-3.75rem)/4)]">
+            <div class="relative aspect-[4/5] overflow-hidden bg-[#e3e0d8]"><img src="https://images.unsplash.com/photo-1548126032-079a0fb0099d?auto=format&fit=crop&w=720&q=80" alt="Cream knit sweater styled with dark trousers" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" /><span class="absolute top-3 left-3 bg-[#f7f6f2] px-2 py-1 text-[10px] font-bold uppercase tracking-wider">New</span></div>
+            <div class="flex justify-between gap-3 pt-3"><div><h3 class="font-medium">Soft Form Knit</h3><p class="mt-1 text-sm text-[#77766f]">Natural wool blend</p></div><p class="text-sm font-medium">$154</p></div>
+          </a>
+          <a href="product.html" class="group w-[72vw] max-w-[300px] shrink-0 snap-start sm:w-[34vw] lg:w-[calc((100%-3.75rem)/4)]">
+            <div class="relative aspect-[4/5] overflow-hidden bg-[#e3e0d8]"><img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=720&q=80" alt="White cotton shirt with a relaxed silhouette" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" /><span class="absolute top-3 left-3 bg-[#f7f6f2] px-2 py-1 text-[10px] font-bold uppercase tracking-wider">New</span></div>
+            <div class="flex justify-between gap-3 pt-3"><div><h3 class="font-medium">Everyday Poplin</h3><p class="mt-1 text-sm text-[#77766f]">Cloud white</p></div><p class="text-sm font-medium">$96</p></div>
+          </a>
+          <a href="product.html" class="group w-[72vw] max-w-[300px] shrink-0 snap-start sm:w-[34vw] lg:w-[calc((100%-3.75rem)/4)]">
+            <div class="relative aspect-[4/5] overflow-hidden bg-[#e3e0d8]"><img src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=720&q=80" alt="Relaxed dark trousers photographed against a neutral wall" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" /><span class="absolute top-3 left-3 bg-[#f7f6f2] px-2 py-1 text-[10px] font-bold uppercase tracking-wider">New</span></div>
+            <div class="flex justify-between gap-3 pt-3"><div><h3 class="font-medium">Transit Trouser</h3><p class="mt-1 text-sm text-[#77766f]">Washed charcoal</p></div><p class="text-sm font-medium">$142</p></div>
+          </a>
+        </div>
+      </section>
+
+      <section aria-labelledby="best-sellers-title" class="border-y border-[#deddd7] bg-[#efeee8]">
+        <div class="mx-auto max-w-[1440px] px-5 py-16 sm:px-8 sm:py-20 lg:px-12">
+          <div class="mb-7 flex items-end justify-between gap-4">
+            <div>
+              <p class="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#77766f]">Good things get around</p>
+              <h2 id="best-sellers-title" class="text-3xl font-medium tracking-[-0.045em] sm:text-4xl">Best sellers</h2>
+            </div>
+            <a href="catalog.html#best-sellers" class="shrink-0 border-b border-[#20211f] pb-1 text-sm font-semibold hover:border-[#c94326] hover:text-[#c94326]">Shop all <span aria-hidden="true">-></span></a>
+          </div>
+          <div class="-mx-5 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-3 sm:-mx-8 sm:gap-5 sm:px-8 lg:-mx-12 lg:px-12">
+            <a href="product.html" class="group w-[72vw] max-w-[300px] shrink-0 snap-start sm:w-[34vw] lg:w-[calc((100%-3.75rem)/4)]">
+              <div class="aspect-[4/5] overflow-hidden bg-[#ddd9cf]"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=720&q=80" alt="Classic heavyweight white cotton t-shirt" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" /></div>
+              <div class="flex justify-between gap-3 pt-3"><div><h3 class="font-medium">Daily Cotton Tee</h3><p class="mt-1 text-sm text-[#77766f]">Organic cotton  |  5 colors</p></div><p class="text-sm font-medium">$58</p></div>
+            </a>
+            <a href="product.html" class="group w-[72vw] max-w-[300px] shrink-0 snap-start sm:w-[34vw] lg:w-[calc((100%-3.75rem)/4)]">
+              <div class="aspect-[4/5] overflow-hidden bg-[#ddd9cf]"><img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=720&q=80" alt="Straight-leg blue denim jeans" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" /></div>
+              <div class="flex justify-between gap-3 pt-3"><div><h3 class="font-medium">Straight Jean</h3><p class="mt-1 text-sm text-[#77766f]">Mid-wash denim</p></div><p class="text-sm font-medium">$136</p></div>
+            </a>
+            <a href="product.html" class="group w-[72vw] max-w-[300px] shrink-0 snap-start sm:w-[34vw] lg:w-[calc((100%-3.75rem)/4)]">
+              <div class="aspect-[4/5] overflow-hidden bg-[#ddd9cf]"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=720&q=80" alt="Model wearing a light, easy everyday outfit" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" /></div>
+              <div class="flex justify-between gap-3 pt-3"><div><h3 class="font-medium">Weekend Layer</h3><p class="mt-1 text-sm text-[#77766f]">Soft sand</p></div><p class="text-sm font-medium">$112</p></div>
+            </a>
+            <a href="product.html" class="group w-[72vw] max-w-[300px] shrink-0 snap-start sm:w-[34vw] lg:w-[calc((100%-3.75rem)/4)]">
+              <div class="aspect-[4/5] overflow-hidden bg-[#ddd9cf]"><img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=720&q=80" alt="Low profile canvas sneakers in a neutral color" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" /></div>
+              <div class="flex justify-between gap-3 pt-3"><div><h3 class="font-medium">Canvas Low Top</h3><p class="mt-1 text-sm text-[#77766f]">Natural / gum</p></div><p class="text-sm font-medium">$88</p></div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" aria-labelledby="about-title" class="mx-auto grid max-w-[1440px] gap-8 px-5 py-16 sm:px-8 sm:py-20 md:grid-cols-[1fr_2fr] lg:px-12">
+        <div><p class="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#77766f]">A note from us</p><h2 id="about-title" class="text-3xl font-medium tracking-[-0.045em]">Made for real days.</h2></div>
+        <p class="max-w-2xl text-lg leading-8 text-[#55554f]">Forma is a small study in getting dressed. We make useful things with a little thought in them: honest materials, easy shapes, and details that earn their place. No special occasion required.</p>
+      </section>
+    </main>
+
+    <footer class="bg-[#20211f] text-[#f7f6f2]">
+      <div class="mx-auto max-w-[1440px] px-5 py-12 sm:px-8 sm:py-16 lg:px-12">
+        <div class="grid gap-10 border-b border-white/20 pb-12 sm:grid-cols-2 lg:grid-cols-4">
+          <div><a href="index.html" class="text-3xl font-black tracking-[-0.06em]">forma<span class="text-[#ed7354]">.</span></a><p class="mt-3 max-w-xs text-sm leading-6 text-white/65">Clothes for the everyday, and everything just outside it.</p></div>
+          <div><h2 class="text-xs font-bold uppercase tracking-[0.16em] text-white/55">Categories</h2><ul class="mt-4 space-y-3 text-sm"><li><a href="catalog.html#footwear" class="hover:text-[#ed7354]">Footwear</a></li><li><a href="catalog.html#shirts" class="hover:text-[#ed7354]">Shirts</a></li><li><a href="catalog.html#pants" class="hover:text-[#ed7354]">Pants</a></li><li><a href="catalog.html#accessories" class="hover:text-[#ed7354]">Accessories</a></li></ul></div>
+          <div><h2 class="text-xs font-bold uppercase tracking-[0.16em] text-white/55">The details</h2><ul class="mt-4 space-y-3 text-sm"><li><a href="#terms" class="hover:text-[#ed7354]">Terms and conditions</a></li><li><a href="#privacy" class="hover:text-[#ed7354]">Privacy policy</a></li><li><a href="#about" class="hover:text-[#ed7354]">About Forma</a></li></ul></div>
+          <div><h2 class="text-xs font-bold uppercase tracking-[0.16em] text-white/55">Contact</h2><p class="mt-4 text-sm leading-6 text-white/75">Questions, notes, or a good book recommendation.</p><a href="mailto:hello@forma.example" class="mt-2 inline-block text-sm underline decoration-white/40 underline-offset-4 hover:text-[#ed7354]">hello@forma.example</a></div>
+        </div>
+        <div class="flex flex-col justify-between gap-3 pt-5 text-xs text-white/50 sm:flex-row"><p>(c) 2026 Forma Studio. For the long way home.</p><p>Thoughtfully made, meant to be worn.</p></div>
+      </div>
+    </footer>
+
+    <section id="terms" class="sr-only" aria-label="Terms and conditions"><h2>Terms and conditions</h2><p>This prototype is a demonstration storefront. No orders or payments are processed.</p></section>
+    <section id="privacy" class="sr-only" aria-label="Privacy policy"><h2>Privacy policy</h2><p>This static prototype does not collect, transmit, or store personal or payment information.</p></section>
+  </body>
+</html>
